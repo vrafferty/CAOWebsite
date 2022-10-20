@@ -20,11 +20,8 @@ body {
 }
 
 .logo {
-    border-right: 0.1rem solid rgb(204, 197, 197);
     margin-right: 4rem;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     padding: 5rem;
 }
 
@@ -34,6 +31,32 @@ body {
 }
 
 .under-construction h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     line-height: 8rem;
+}
+
+@media (max-width: 992px) {
+    .logo {
+        border-bottom: 0.1rem solid rgb(204, 197, 197);
+        border-right: none;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .under-construction h1 {
+        text-align: center;
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+    .under-construction {
+        margin: 1rem 0 0 0;
+    }
+}
+@media (min-width: 992px) {
+    .logo {
+        border-right: 0.1rem solid rgb(204, 197, 197);
+        border-bottom: none;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
