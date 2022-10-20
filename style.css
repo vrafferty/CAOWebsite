@@ -33,6 +33,7 @@ body {
 .under-construction h1 {
     font-size: 5.5rem;
     line-height: 8rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.6);
 }
 
 @media (max-width: 992px) {
