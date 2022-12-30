@@ -1,35 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers Advice Office</title>
+  <head>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Career Advice Office</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>  
+    <link rel="stylesheet" href="fullpage.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="logo col-lg-5 ">
-                <img id="logo" src="images/logowhite.png" alt="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="style.css"/>
+
+    
+  </head>
+  <body>
+
+    <header class="nav-bar nav">
+      <img class="logo"src="logo-2.png" alt="">
+      <ul id="menu-items" class="menu-items col-lg-7 col-md-3 d-md-flex d-none">
+        <li data-menuanchor="homepage" ><a class="menu-li" id="home-link" href="#homepage">Home </a></li>
+        <li data-menuanchor="about"><a class="menu-li" href="#about">About Us </a></li>
+        <li data-menuanchor="businesses"><a class="menu-li" href="#businesses">Businesses </a></li>
+        <li data-menuanchor="individuals"><a class="menu-li" href="#individuals">Individuals </a></li>
+        <li data-menuanchor="pricing"><a class="menu-li" href="#pricing">Pricing </a></li>
+        <li data-menuanchor="contact"><a class="menu-li" href="#contact">Contact Us </a></li>
+      </ul>
+    </header>
+
+    <div class="hamburger-menu no-display d-md-flex d-none">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div> 
+    <div id="fixed-box" class="fixed-box-homepage">
+    </div>
+    <div class="back-to-top hidden">
+      <a href="#homepage"><i class="fa-solid fa-chevron-up"></i></a>
+      
+    </div>
+    
+    <div class="full-page-container">
+
+
+      <div class="section container-fluid" id="landing-page" data-anchor="homepage">
+        <div class="page page-1 d-flex flex-column justify-content-centre justify-content-md-between  py-lg-3 py-0 px-0">
+          <div class="row landing-page d-flex flex-column flex-md-row align-items-center justify-content-md-evenly justify-content-start">
+            <div class="col-xl-1 d-xl-inline d-none"></div>
+            <div class="col-xl-5 d-flex flex-column justify-content-center align-items-center align-items-xl-start landing-page-title pt-4 px-4 p-md-2">
+              <h1 class="title text-center text-xl-start"><span class="coloured">C</span>areer <br> Ad<span class="coloured">v</span>ice Office</h1>
+              <p class="landing-page-additional text-center text-xl-start">All things recruitment is what we do</p>
             </div>
-            <div class="under-construction col-lg-5">
-                <h1>WEBSITE</h1>
-                <h1>UNDER</h1>
-                <h1>CONSTRUCTION</h1>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-9 mt-xl-5 landing-page-img d-flex align-items-center justify-content-center">
+              <img class="img img-responsive" src="landing-page.png" alt="">
             </div>
+          </div>
+          <div class="row landing-page-links d-flex align-items-end justify-content-center">
+            <div class="col-xl-4 col-lg-3 col-12 mb-lg-4 mb-2 landing-page-learn-more d-flex align-items-center justify-content-lg-center flex-row flex-lg-column justify-content-evenly">
+              <h3 class="d-none d-md-inline learn-more-title text-center">Business Support </h3>
+              <div class="page-button d-flex align-items-center justify-content-center">
+                <button class="btn d-md-inline d-none learn-more px-3 py-2"><a href="#businesses">Learn More</a></button>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-3 col-12 mb-4 landing-page-learn-more d-flex align-items-center justify-content-lg-center flex-row flex-lg-column justify-content-evenly border-left">
+              <h3 class="d-none d-md-inline learn-more-title text-center">Career Support </h3>
+              <div class="page-button d-flex align-items-center justify-content-center">
+                <button class="btn d-md-inline d-none learn-more px-3 py-2 ms-4 ms-lg-0"><a href="#individuals">Learn More</a></button>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 m-md-0 m-0 m-sm-3 page-social-links d-flex flex-column align-items-xl-end align-items-center text-center text-xl-end justify-content-end">
+              <div class="icons d-flex justify-content-between col-lg-5 col-md-2 col-5">
+                <a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="http://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="http://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a> 
+                </div>
+                <div class="contacts">
+                  <p>contact@careeradviceoffice.com</p>
+                  <p>07507 790841</p>
+                </div>
+            </div>
+          </div>
         </div>
+      </div>  
+
+      <div data-anchor="about" id="about-page" class="section container-fluid no-opacity">
+          <div class="page d-flex flex-column justify-content-between py-md-5">
+            <div class="row page-heading d-flex align-items-center justify-content-center text-center">
+              <div class="col-12">
+                <h2 class="page-title mb-lg-0 ">What We Do</h2>
+              </div>
+              <div class="col-xl-10 col-11">
+                <p class="page-heading-text">The career advice office  is a dynamic consultancy supporting businesses and individuals across the UK in all things recruitment and career enhancement. <br> We support individuals looking to enhance their career with CV design, and advice covering job boards, and how to get the best out of recruitment agencies <br> We consult on headcount growth, staff attraction and retention, the design and implementation of bespoke interview processes, interview training, and much more.</p>
+              </div> 
+            </div>
+            <div class="row page-content d-flex align-items-center justify-content-center">
+              <div class="col-xxl-7 col-xl-7 col-md-10 col-sm-12">
+                <div class="page-img d-flex align-items-center justify-content-center mt-2">
+                  <img class="img img-responsive" src="about-us-shadow.png" alt="">
+                </div>
+              </div>
+              <div class="col-xxl-5 col-xl-7 col-md-12">
+                <ul class="page-list d-none d-xxl-flex flex-column align-items-center justify-content-center text-center">
+                  <li><h4>Why Us?</h4></li>
+                  <li>We have over 40 years experience of recruiting all over the UK</li>
+                  <li>We've interviewed and recruited thousands of people at all levels- from shop floor to board room</li>
+                  <li>We simplify interviews and recruitment, creating a plan that is bespoke to you</li>
+                  <li>We are a support consultancy that focuses on delivering results</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="section container-fluid section-content no-opacity d-xxl-none d-flex align-items-center justify-content-center" data-anchor="about-additional" id="about-additional">
+        <div class="row">
+          <div class="col-12 p-3">
+            <ul class="page-list d-flex flex-column align-items-center justify-content-center text-center">
+              <li><h4>Why Us?</h4></li>
+                  <li>We have over 40 years experience of recruiting all over the UK</li>
+                  <li>We've interviewed and recruited thousands of people at all levels- from shop floor to board room</li>
+                  <li>We simplify interviews and recruitment, creating a plan that is bespoke to you</li>
+                  <li>We are a support consultancy that focuses on delivering results</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div data-anchor="businesses" id="businesses-page" class="section container-fluid no-opacity"> 
+          <div class="page d-flex flex-column justify-content-between py-md-5">
+            <div class="row page-heading d-flex align-items-center justify-content-center text-center">
+              <div class="col-12">
+                <h2 class="page-title">BUSINESS SUPPORT</h2>
+              </div>
+                <div class="col-xl-10">                
+                <p class="page-heading-text">We offer to our clients a consultancy service that covers "All Things Recruitment" <br> Utilise our extensive knowledge of more than 40 years experience within the UK recruitment sector. Every business can be exposed to the hidden costs of recruitment, such as missed profit due to headcount shortfalls, extensive staff turnover, bad hires, or high advertising and recruitment fees.</p>
+              </div>
+            </div>
+              <div class="row page-content d-flex flex-row align-items-center justify-content-center">
+                <div class="col-xxl-5 col-xl-7 col-md-12">
+                  <ul class="page-list d-none d-xxl-flex d-flex flex-column align-items-center justify-content-center text-center">
+                    <li><h4>We Offer:</h4></li>
+                    <li>Interview training, process and design</li>
+                    <li>Recruitment Project Delivery</li>
+                    <li>Staff Retention/ Staff Turnover Support</li>
+                    <li>Getting the best out of recruitment agencies</li>
+                    <li>Salary Benchmarking</li>
+                    <li>Workforce support in times of headcount reduction</li>
+                    <li>Consultancy support with growth plans</li>
+                    <li>Identify and Reduce hidden recruitment costs</li>
+                    <li>And Much more...</li>
+                    <li><h5>Contact Us Today for Further Information</h5></li>
+                  </ul>
+                  <div class="page-button d-none d-xxl-flex align-items-center justify-content-center">
+                    <button class="btn learn-more"><a href="#contact">Contact Us</a></button>
+                  </div> 
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-md-10 col-sm-12">
+                  <div class="page-img d-flex align-items-center justify-content-center">
+                    <img id="business-img" class="img img-responsive" src="businesses.png" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="section container-fluid section-content no-opacity d-xxl-none d-flex align-items-center justify-content-center" data-anchor="business-additional" id="business-additional">
+          <div class="row">
+            <div class="col-12 p-3">
+              <ul class="page-list d-flex flex-column align-items-center justify-content-center text-center">
+                    <li><h4>For Businesses Seeking Recruitment Advice</h4></li>
+                    <li><h4>We Offer:</h4></li>
+                    <li>Interview training, process and design</li>
+                    <li>Recruitment Project Delivery</li>
+                    <li>Staff Retention/ Staff Turnover Support</li>
+                    <li>Getting the best out of recruitment agencies</li>
+                    <li>Salary Benchmarking</li>
+                    <li>Workforce support in times of headcount reduction</li>
+                    <li>Consultancy support with growth plans</li>
+                    <li>Identify and Reduce hidden recruitment costs</li>
+                    <li>And Much more...</li>
+                    <li><h5>Contact Us Today for Further Information</h5></li>
+              </ul>
+              <div class="page-button d-none d-md-flex align-items-center justify-content-center">
+                <button class="btn learn-more"><a href="#contact">Contact Us</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-anchor="individuals" id="individuals-page" class="section container-fluid section-content no-opacity"> 
+          <div class="page d-flex flex-column justify-content-between py-md-5">
+            <div class="row page-heading d-flex align-items-center justify-content-center text-center">
+              <div class="col-12">
+                <h2 class="page-title">CAREER SUPPORT</h2>
+              </div>
+                <div class="col-xl-10">
+                  <p class="page-heading-text">We offer individuals independent support and training to assist them in their search for a new role. This support can manifest itself in many ways, and is tailored to you and what you are looking for. Utilise our 40 years of experience as recruiters and interviewers, and stand out from the crowd to get that job you want!</p>             
+                </div>
+            </div>
+              <div class="row page-content d-flex align-items-center justify-content-center">
+                <div class="col-xxl-7 col-lg-8 col-md-10 col-sm-12">
+                  <div class="page-img d-flex align-items-center justify-content-center">
+                    <img src="individuals.png" alt="">
+                  </div>
+                </div>
+                <div class="col-xxl-5 col-md-12 ">
+                  <ul class="page-list d-none d-xxl-flex d-flex flex-column align-items-center justify-content-center text-center">
+                    <li><h4>We Offer:</h4></li>
+                    <li>CV Review</li>
+                  <li>CV Design and Production</li>
+                  <li>Career Guidance</li>
+                  <li>Salary Advice</li>
+                  <li>Interview Training</li>
+                  <li>Help Working with Recruitment Agencies and Job boards</li>
+                  <li>How to stand out from the crowd!</li>
+                  <li>And Much More</li>
+                  <li><h5>Book a Free Call to Discuss How we Can Help you</h5></li>
+                  </ul>
+                  <div class="page-button d-none d-xxl-flex align-items-center justify-content-center">
+                    <button class="btn learn-more"><a href="#contact">Contact Us</a></button>
+                  </div> 
+                </div>
+                
+              </div>
+          </div>
+        </div>
+        <div class="section container-fluid section-content no-opacity d-xxl-none d-flex align-items-center justify-content-center" data-anchor="individuals-additional" id="individuals-additional">
+          <div class="row">
+            <div class="col-12 p-1">
+              <ul class="page-list d-flex flex-column align-items-center justify-content-center text-center">
+                <li><h4>For individuals seeking career support,</h4></li>
+                <li><h4>We Offer:</h4></li>
+                <li>CV Review</li>
+              <li>CV Design and Production</li>
+              <li>Career Guidance</li>
+              <li>Salary Advice</li>
+              <li>Interview Training</li>
+              <li>Help Working with Recruitment Agencies and Job boards</li>
+              <li>How to stand out from the crowd!</li>
+              <li>And Much More</li>
+              <li><h5>Book a Free Call to Discuss How we Can Help you</h5></li>
+              </ul>
+              <div class="page-button d-none d-md-flex align-items-center justify-content-center">
+                <button class="btn learn-more"><a href="#contact">Contact Us</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-anchor="pricing" id="pricing-section" class="section container-fluid section-content no-opacity">
+          <div class="page d-flex flex-column justify-content-center">
+            <div class="row page-heading d-flex align-items-end justify-content-center text-center">
+              <h2 class="col-12 mt-auto page-title">FEES</h2>
+            </div>
+            <div id="page-content-pricing" class="row page-content d-flex align-items-start justify-content-center">
+              <div class="back-arrow arrow d-xxl-none d-inline col-1"><i class="fa-solid fa-arrow-left-long"></i></div>
+              <div class="next-arrow arrow d-xxl-none d-inline col-1"><i class="fa-solid fa-arrow-right-long"></i></div>
+              <div id="card-wrapper" class="row card-wrapper d-flex flex-row align-items-start flex-no-wrap">
+                <div class="card card-1 col-3 me-xxl-auto mx-auto p-3 text-center d-flex justify-content-center align-items-center" data-tilt data-tilt-axis="x" data-tilt-max="20">
+                  <h4 class="mb-auto mt-2 card-heading">Consultation</h4>
+                  <div class="details">
+                    <p><i class="fa-solid fa-check tick"></i>One Phone Call</p>
+                    <p><i class="fa-solid fa-check tick"></i>Discuss personal requirements</p>
+                    <p><i class="fa-solid fa-check tick"></i>Create a bespoke quote for further coaching/training</p>
+                    <p><i class="fa-solid fa-check tick"></i>A detailed outline plan of how we can help</p>
+                    <p><i class="fa-solid fa-check tick"></i>An assessment of current CV/Job Career Search</p>
+                  </div>
+                    <h3 class="mt-auto mb-2">Free</h3>
+                    <button class="btn age-button btn pricing-card-btn card-1-btn d-none d-md-flex" ><a href="contact">Contact Us</a></button>
+                </div>
+                <div class="card card-2 col-3 mx-auto p-3 text-center d-flex justify-content-between align-items-center" data-tilt data-tilt-axis="x" data-tilt-max="20">
+                  <h4 class="mb-auto mt-2 card-heading">Career Support</h4>
+                  <div class="details">
+                    <p><i class="fa-solid fa-check tick"></i>In Depth Career To Date Consultation</p>
+                    <p><i class="fa-solid fa-check tick"></i>How To Deal with Agencies</p>
+                    <p><i class="fa-solid fa-check tick"></i>Interview and Job Search Training</p>
+                    <p><i class="fa-solid fa-check tick"></i>Job Search Advice</p>
+                    <p><i class="fa-solid fa-check tick"></i>Processing CV production/design</p>
+                  </div>
+                    <h3 class="mt-auto mb-2">£275</h3>
+                    <button class="btn page-button btn pricing-card-btn card-2-btn d-none d-md-flex" ><a href="contact">Contact Us</a></button>
+                </div>
+                <div class="card card-3 col-3 ms-xxl-auto mx-auto p-3 text-center d-flex justify-content-between align-items-center" data-tilt data-tilt-axis="x" data-tilt-max="20">
+                  <h4 class="mb-auto mt-2 card-heading">Business Support</h4>
+                  <div class="details">
+                    <p><i class="fa-solid fa-check tick"></i>Interview process, design, delivery and training</p>
+                    <p><i class="fa-solid fa-check tick"></i>Eradicate the costs of bad recruitment</p>
+                    <p><i class="fa-solid fa-check tick"></i>Workforce Support</p>
+                    <p><i class="fa-solid fa-check tick"></i>Attract the right candidates for your business</p>
+                    <p><i class="fa-solid fa-check tick"></i>Long term/retained assignments negotiable</p>
+                  </div>
+                    <h3 class="mt-auto mb-2">£175/hour</h3>
+                    <button class="btn page-button btn pricing-card-btn card-3-btn d-none d-md-flex" ><a href="contact">Contact Us</a></button>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      
+
+      <div data-anchor="contact" class="section container-fluid section-content no-opacity" id="contact-form">
+        <div class="page d-flex flex-column justify-content-center">
+          <div class="row page-heading d-flex align-items-end justify-content-center text-center">
+            <h2 class="page-title">Contact Us</h2>
+          </div>
+          <div class="row page-content d-flex align-items-start justify-content-center">
+            <form method="post" class="form mb-5" id="myForm">
+              <div class="row">
+                <div class="ms-auto col-md-2">
+                  <label for="name" class="col-form-label col-form-label-md label">Name</label>
+                </div>
+                <div class="col-md-8 me-md-auto m-auto">
+                  <input required id="name" placeholder="Full Name" class="form-control form-control-sm"type="text">
+                </div>
+              </div>
+              <div class="row">
+                <div class="ms-auto col-md-2">
+                  <label for="enquiry" class="col-form-label col-form-label-md label">Enquiry Type</label>
+                </div>
+                <div class="col-md-8 me-md-auto m-auto">
+                  <select required class="form-select form-select-sm" name="" id="enquiry">
+                    <option value="consultation">Consultation Request</option>
+                    <option value="individual">Individual Enquiry</option>
+                    <option value="business">Business Enquiry</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="ms-auto col-md-2">
+                  <label for="businessName" class="col-form-label col-form-label-md label">Business Name</label>
+                </div>
+                <div class="col-md-8 me-md-auto m-auto">
+                  <input id="businessName" placeholder="Business Name" class="form-control form-control-sm" type="text">
+                </div>
+              </div>
+              <div class="row">
+                <div class="ms-auto col-md-2">
+                  <label for="email" class="col-form-label col-form-label-md label">E-mail Address</label>
+                </div>
+                <div class="col-md-8 me-md-auto m-auto">
+                  <input required id="email" placeholder="example@abc.com" class="form-control form-control-sm" type="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="ms-auto col-md-2">
+                  <label for="telephone" class="col-form-label col-form-label-md label">Contact Number</label>
+                </div>
+                <div class="col-md-8 me-md-auto m-auto">
+                  <input required id="telephone" placeholder="01234 567890" class="form-control form-control-sm" type="number">
+                </div>
+              </div>
+              <div class="row">
+                <div class="ms-auto col-md-2">
+                  <label for="message" class="col-form-label col-form-label-md label">Message</label>
+                </div>
+                <div class="col-md-8 me-md-auto m-auto">
+                  <textarea required name="" id="message" placeholder="Your message here" cols="20" class="form-control form-control-sm" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="g-recaptcha validate" data-sitekey="6LfNSA0jAAAAAF47c8jMPPscMaHSgWk4Ywobqpou"></div>
+              <div class="row">
+                <input class="d-flex d-md-none form-submit-btn text-center" type="submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
     </div>
 
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
     
-
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAeJiBgJmptEgUqXndUbFucRb9CcJlGgvA",
+        authDomain: "career-advice-office-9f420.firebaseapp.com",
+        projectId: "career-advice-office-9f420",
+        storageBucket: "career-advice-office-9f420.appspot.com",
+        messagingSenderId: "451968363130",
+        appId: "1:451968363130:web:812eef16ea99b5ce9ca9c3",
+        measurementId: "G-JZEQ5CZ6HW"
+      };
     
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+    <script src="tilt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+   
+  </body>
 </html>
