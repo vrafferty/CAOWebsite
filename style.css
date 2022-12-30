@@ -69,10 +69,10 @@ a:hover {
 .hamburger-menu-toggle #home-link {
   display: inline;
 }
-.hidden {
+/* .hidden {
   display: none;
   opacity: 0;
-}
+} */
 .menu-items a {
   color: white;
   text-decoration: none;
@@ -325,6 +325,8 @@ a:hover {
 .page-title {
   letter-spacing: 0.5rem;
   font-size: 2.3rem;
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
 }
 .mobile-image {
   display: none;
@@ -522,13 +524,19 @@ a:hover {
   background: #922525;
 }
 .form-submit-btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  padding: 1.5rem 1rem 1.5rem 1rem;
   margin: 1rem auto;
   width: 80%;
   border-radius: 1rem;
   background-color: #14453D;
   color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .25rem;
   text-transform: uppercase;
+
 }
 #page-content-pricing {
   position: relative;
@@ -562,13 +570,14 @@ a:hover {
 .fp-watermark {
   display: none;
 }
-.contact-btn {
+#submit-btn {
   color: white;
   height: 100%;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
+  opacity: 1;
 }
 .fixed-box-contact:hover {
   transform: scale(1.05);

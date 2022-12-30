@@ -153,7 +153,7 @@ const addHamburgerEvents = (hiddenType)=> {
 const moveToPage = (origin, destination)=> {
 	fixedBox.className = ""
 	fixedBox.innerHTML = destination === "contact" ? setTimeout(()=> {
-		fixedBox.innerHTML = "<button class='btn contact-btn'>Submit</button>"
+		fixedBox.innerHTML = "<button id='submit-btn' class='btn contact-btn'>Submit</button>"
 		addSubmit()
 	},500) : ""
 	fixedBox.classList.add(`fixed-box-${destination}`)
@@ -194,8 +194,8 @@ new fullpage(".full-page-container", {
 	navigationPosition: "right",
 	loopBottom: true,
 	onLeave: function(origin, destination) {
-		document.querySelector(`[data-anchor*=${destination.anchor}]`).classList.remove("no-opacity");
-		document.querySelector(`[data-anchor*=${origin.anchor}]`).classList.add("no-opacity")
+		// document.querySelector(`[data-anchor*=${destination.anchor}]`).classList.remove("no-opacity");
+		// document.querySelector(`[data-anchor*=${origin.anchor}]`).classList.add("no-opacity")
 		moveToPage(origin.anchor, destination.anchor)
 	}
 })
